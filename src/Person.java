@@ -12,6 +12,13 @@ public class Person implements Serializable{
 	
 	}
 	
+	//Benötigt da Basisklasse für Patient & Arzt
+	public Person(String vorname, String name, Adresse adresse) {
+		this.setNachname(name);
+   		this.setVorname(vorname);
+   		this.setAdresse(adresse);
+   	}
+
 	public Person(String vorname, String name, Adresse adresse, int age) {
 		this.setNachname(name);
    		this.setVorname(vorname);
@@ -19,7 +26,7 @@ public class Person implements Serializable{
 		this.setAge(age);
    	}
 	
-public Person(String vorname, 
+	public Person(String vorname, 
 				String name, 
 				String strasse, 
 				String hausnummer, 
