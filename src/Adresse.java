@@ -7,13 +7,7 @@ public class Adresse implements Serializable{
 	private String postleitzahl;
 	private String stadt;
 	
-	/**
-	 * 
-	 * @param strasse
-	 * @param hausnummer
-	 * @param postleitzahl
-	 * @param stadt
-	 */
+	//Wird vewendet um ein neues Objekt der Klasse Adresse anzulegen
 	public Adresse(String strasse, String hausnummer, String postleitzahl, String stadt) {
 		this.setStrasse(strasse);
 		this.setHausnummer(hausnummer);
