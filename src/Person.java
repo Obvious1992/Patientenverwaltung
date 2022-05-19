@@ -5,15 +5,18 @@ public class Person implements Serializable{
 	private String vorname;
 	private String nachname;
 	private Adresse adresse;
+	private int age;
+
 	
 	public Person() {
 	
 	}
 	
-	public Person(String vorname, String name, Adresse adresse) {
+	public Person(String vorname, String name, Adresse adresse, int age) {
 		this.setNachname(name);
    		this.setVorname(vorname);
    		this.setAdresse(adresse);
+		this.setAge(age);
    	}
 	
 public Person(String vorname, 
@@ -42,6 +45,13 @@ public Person(String vorname,
 	}
 	public void setNachname(String name) {
 		this.nachname = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
 	
